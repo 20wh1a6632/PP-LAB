@@ -1,0 +1,9 @@
+def linear_search(a: list, ele: int):
+    for i in range(len(a)):
+        if a[i] == ele:
+            return f"Element found at position {i+1}"
+    return "Element NOT found"
+
+print(linear_search([24,87,57,2987,743], 2987))
+
+print(linear_search([37,9,16,8,209,45,63], 45))
