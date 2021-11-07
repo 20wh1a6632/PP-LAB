@@ -1,0 +1,12 @@
+def linear_search1(a: list, ele: int, i: int) -> str:
+    if i > len(a):
+        return "Element NOT found"
+    if a[i] == ele:
+        return f"Element found at position {i+1}"
+    else:
+        i += 1
+        return linear_search1(a, ele, i)
+
+print(linear_search1([12, 28, 39, 5, 73, 9], 73, 0))
+
+print(linear_search1([45, 19, 13, 8, 41, 23, 87], 13, 0))
