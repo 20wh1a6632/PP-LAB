@@ -1,0 +1,18 @@
+def binary_search(a: list, ele: int):
+    low = 0
+    high = len(a) - 1
+    while(high>=low):
+        mid = (low + high) // 2
+        if a[mid] > ele:
+            high -= 1
+        elif a[mid] < ele:
+            low += 1
+        elif a[mid] == ele:
+            return f"The element is found at position {mid+1}"
+
+print(binary_search([12,25,32,42,45,89], 45))
+
+print(binary_search([1,7,18,23,37,39,42,99], 23))
+
+
+
